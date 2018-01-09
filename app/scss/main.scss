@@ -1,0 +1,59 @@
+@import "fonts";
+@import "vars";
+@import "normalize";
+@import "global";
+@import "flex";
+
+.header-info {
+	border-bottom: 1px solid #EDEFF1;
+}
+
+.contact {
+	margin-right: 19px;
+	img {
+		margin-right: 9px;
+	}
+}
+
+.socials {
+	img {
+		margin-left: 22px;
+	}
+}
+
+nav {
+	ul {
+		margin-left: 85px;
+		li {
+			margin-right: 40px;
+		}
+	}
+}
+
+.actions {
+	margin-left: auto;
+}
+
+.product-count {
+	width: 18px;
+	height: 18px;
+	margin-right: 3px;
+	border-radius: 100%;
+	background-color: #34404B;
+	margin-left: auto;
+	margin-bottom: 2px;
+}
+
+.action {
+	margin-left: 35px;
+	img {
+		margin-top: auto;
+	}
+	
+}
+
+.cart {
+	height: 38px;
+}
+
+@import "media";
