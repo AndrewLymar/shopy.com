@@ -1,5 +1,7 @@
 @import "_mixins/font-face";
 
-@include font-face("HarmoniaSansProCyrRegular", "../fonts/HarmoniaSansProCyr-Regular");
-@include font-face("HarmoniaSansProCyrBold", "../fonts/HarmoniaSansProCyr-Bold", bold);
-@include font-face("HarmoniaSansProCyrBoldItalic", "../fonts/HarmoniaSansProCyr-BoldItalic", bold, italic);
+@include font-face("Harmonia", "../fonts/HarmoniaSansProCyr-Light", 300);
+@include font-face("Harmonia", "../fonts/HarmoniaSansProCyr-Regular");
+@include font-face("Harmonia", "../fonts/HarmoniaSansProCyr-Bold", 600);
+@include font-face("Harmonia", "../fonts/HarmoniaSansProCyr-BoldItalic", 600, italic);
+@include font-face("Harmonia", "../fonts/HarmoniaSansProCyr-Black", 900);
