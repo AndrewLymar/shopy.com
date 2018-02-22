@@ -79,10 +79,7 @@ nav {
 	h1 {
 		font-size: 52.15px;
 		text-transform: uppercase;
-		color: #FF5912;
-	}
-	p {
-		margin: 0;
+		color: $main_color;
 	}
 	.product-description {
 		margin-bottom: 17px;
@@ -98,14 +95,17 @@ nav {
 		font-size: 18px;
 		font-weight: 600;
 	}
-	.price {
-		margin-right: 30px;	
+	.banner-price {
+		margin-right: 30px;
 	}
 	.order {
-		color: #FF5912;
+		color: $main_color;
 		img {
 			margin-right: 8px;
 		}
+	}
+	&-info {
+		max-width: 500px;
 	}
 }
 
@@ -125,7 +125,7 @@ nav {
 	&-orange {
 		width: 9px;
 		height: 36px;
-		background-color: #FF5912;
+		background-color: $main_color;
 	}
 }
 
@@ -133,17 +133,20 @@ h2 {
 	text-transform: uppercase;
 }
 
-section {
+.main-wrapper {
 	background-color: #F4F6F8;
+}
+
+section {
 	h2 {
 		margin-top: 120px;
 		text-align: center;
 		font-size: 36px;
 		span {
-			color: #FF5912;
+			color: $main_color;
 		}
 	}
-	h2 + p {
+	h2+div {
 		margin-top: 32px;
 		margin-bottom: 84px;
 		text-align: center;
@@ -151,25 +154,213 @@ section {
 	}
 }
 
+.products {
+	margin-bottom: 80px;
+}
+
 .product {
 	width: 270px;
-	height: 365px;
+	height: auto;
+	padding: 30px 10px;
+	margin-bottom: 50px;
 	background-color: #fff;
+	cursor: pointer;
+	.img-container {
+		img {
+			max-width: 200px;
+			width: 100%;
+			height: auto;
+		}
+	}
 	&-text {
 		margin-top: auto;
 	}
-	h3, p {
+	&-price {
+		margin-top: 15px;
+		margin-bottom: 0px;
+		font-size: 18px;
+		color: $main_color;
+	}
+	h3,
+	&-price {
 		font-weight: 600;
 		text-align: center;
 	}
 	h3 {
-		margin-top: 28px;
+		margin-top: 15px;
 		color: #34404b;
 	}
-	p {
-		margin-top: 33px;
-		font-size: 18px;
-		color: #FF5912;
+	&:hover {
+		box-shadow: 0px 8px 31px 3px rgba(228,230,231,1);
 	}
 }
+
+.divider {
+	height: 60px;
+	margin-top: 30px;
+	background-color: #fff;
+}
+
+.circle {
+	width: 8px;
+	height: 8px;
+	margin-right: 5px;
+	background-color: $main_color;
+	border-radius: 100%;
+	&:last-child {
+		margin-right: 0px;
+	}
+}
+
+.to-purchase {
+	margin-top: 120px;
+}
+
+.buy-area,
+.adv-area {
+	height: 100px;
+	background-color: #fff;
+}
+
+.buy-area {
+	width: 60%;
+	h3 {
+		font-size: 22px;
+		font-weight: 900;
+		text-transform: uppercase;
+		color: #34404b;
+		p {
+			margin: 0;
+			margin-top: 5px;
+			font-size: 12px;
+			color: #495662;
+		}
+	}
+}
+
+.adv-area {
+	width: 35%;
+	color: #34404b;
+	&-text {
+		span {
+			color: #ff5912;
+		}
+	}
+	&-num {
+		font-size: 12px;
+		letter-spacing: 1.1em;
+		color: #BFC2C4;
+	}
+}
+
+.sale {
+	width: 80px;
+	height: 80px;
+	background: url("../img/sale-bg.png") no-repeat;
+	color: #fff;
+	&-text {
+		margin: 0;
+		text-align: center;
+		font-size: 14px;
+		line-height: 1.6em;
+		font-weight: 300;
+		font-style: italic;
+		span {
+			font-size: 16px;
+			font-weight: 900;
+			font-style: normal;
+		}
+	}
+	&-price {
+		margin: 0;
+		margin-left: 20px;
+		line-height: 1em;
+		font-size: 24px;
+		font-weight: 900;
+		color: $main_color;
+	}
+}
+
+.adv-area-text {
+	font-weight: 600;
+}
+
+.best-product {
+	width: 370px;
+	height: 160px;
+	margin-bottom: 50px;
+	padding-right: 30px;
+	padding-left: 30px;
+	background: #fff;
+	cursor: pointer;
+	&-text {
+		width: 60%;
+	}
+	&-divider {
+		height: 56px;
+		border-left: 1px solid #F5F5F6;
+	}
+	h3 {
+		margin-bottom: 32px;
+		font-size: 18px;
+		color: #34404b;
+	}
+	&-price {
+		font-size: 16px;
+		font-weight: 600;
+		color: $main_color;
+	}
+	&:hover {
+		box-shadow: 0px 8px 31px 3px rgba(228,230,231,1);
+	}
+}
+
+.s-best {
+	padding-bottom: 120px;
+}
+
+.news {
+	width: 100%;
+	height: 120px;
+	margin-top: 80px;
+	background: #fff;
+	&-text {
+		h4 {
+			margin-right: 25px;
+			font-size: 18px;
+			font-weight: 900;
+			text-transform: uppercase;
+			color: $main_color;
+		}
+		&-join {
+			font-size: 14px;
+			font-style: italic;
+			text-transform: lowercase;
+			color: #34404b;
+		}
+	}
+	.email {
+		margin-right: 160px;
+		img {
+			margin-right: 10px;
+		}
+		&-text {
+			font-style: italic;
+			font-size: 12px;
+			text-transform: lowercase;
+			color: #7c8791;
+		}
+	}
+	button {
+		width: 150px;
+		height: 50px;
+		background-color: $main_color;
+		border: none;
+		font-size: 14px;
+		font-weight: 600;
+		text-transform: lowercase;
+		color: #fff;
+	}
+}
+
 @import "media";
