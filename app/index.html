@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Title</title>
+	<title>Shopy</title>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -88,33 +88,90 @@
 				<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
 				<div class="products container flex-row flex-wrap flex-around">
 					<div class="product flex-col flex-centered">
-						<div class="img-container">
-							<img src="img/product1.png" alt="product">
-						</div>
-
+						<img src="img/product1.png" alt="product" class="product-img">
 						<div class="product-text">
 							<h3>Reebok Track Jacket</h3>
+							<div class="product-add-to-cart flex-col flex-middle">
+								<div class="sizes">Sizes : s - m - l - xl</div>
+								<div class="colors flex-row">
+									<div class="color color-red"></div>
+									<div class="color color-darkgrey"></div>
+									<div class="color color-blue"></div>
+									<div class="color color-green"></div>
+								</div>
+								<div class="product-divider"></div>
+								<div class="product-actions flex-row flex-middle">
+									<img src="img/share.png" alt="share">
+									<img src="img/add-to-cart.png" alt="add to cart">
+									<img src="img/like.png" alt="like">
+								</div>
+							</div>
 							<div class="product-price">100$</div>
 						</div>
 					</div>
 					<div class="product flex-col flex-centered">
-						<img src="img/product2.png" alt="product">
+						<img src="img/product2.png" alt="product" class="product-img">
 						<div class="product-text">
 							<h3>Reebok Track Jacket</h3>
+							<div class="product-add-to-cart flex-col flex-middle">
+								<div class="sizes">Sizes : s - m - l - xl</div>
+								<div class="colors flex-row">
+									<div class="color color-red"></div>
+									<div class="color color-darkgrey"></div>
+									<div class="color color-blue"></div>
+									<div class="color color-green"></div>
+								</div>
+								<div class="product-divider"></div>
+								<div class="product-actions flex-row flex-middle">
+									<img src="img/share.png" alt="share">
+									<img src="img/add-to-cart.png" alt="add to cart">
+									<img src="img/like.png" alt="like">
+								</div>
+							</div>
 							<div class="product-price">100$</div>
 						</div>
 					</div>
 					<div class="product flex-col flex-centered">
-						<img src="img/product3.png" alt="product">
+						<img src="img/product3.png" alt="product" class="product-img">
 						<div class="product-text">
 							<h3>Reebok Track Jacket</h3>
+							<div class="product-add-to-cart flex-col flex-middle">
+								<div class="sizes">Sizes : s - m - l - xl</div>
+								<div class="colors flex-row">
+									<div class="color color-red"></div>
+									<div class="color color-darkgrey"></div>
+									<div class="color color-blue"></div>
+									<div class="color color-green"></div>
+								</div>
+								<div class="product-divider"></div>
+								<div class="product-actions flex-row flex-middle">
+									<img src="img/share.png" alt="share">
+									<img src="img/add-to-cart.png" alt="add to cart">
+									<img src="img/like.png" alt="like">
+								</div>
+							</div>
 							<div class="product-price">100$</div>
 						</div>
 					</div>
 					<div class="product flex-col flex-centered">
-						<img src="img/product3.png" alt="product">
+						<img src="img/product2.png" alt="product" class="product-img">
 						<div class="product-text">
 							<h3>Reebok Track Jacket</h3>
+							<div class="product-add-to-cart flex-col flex-middle">
+								<div class="sizes">Sizes : s - m - l - xl</div>
+								<div class="colors flex-row">
+									<div class="color color-red"></div>
+									<div class="color color-darkgrey"></div>
+									<div class="color color-blue"></div>
+									<div class="color color-green"></div>
+								</div>
+								<div class="product-divider"></div>
+								<div class="product-actions flex-row flex-middle">
+									<img src="img/share.png" alt="share">
+									<img src="img/add-to-cart.png" alt="add to cart">
+									<img src="img/like.png" alt="like">
+								</div>
+							</div>
 							<div class="product-price">100$</div>
 						</div>
 					</div>
@@ -127,8 +184,8 @@
 					</div>
 				</div>
 				<div class="to-purchase">
-					<div class="container flex-row flex-around">
-						<div class="buy-area flex-row flex-middle flex-around">
+					<div class="container flex-row flex-around flex-wrap">
+						<div class="buy-area flex-row flex-middle flex-around flex-wrap">
 							<div class="sale flex-row flex-centered">
 								<div class="sale-text">Sale<br>
 									<span>50%</span>
@@ -138,7 +195,7 @@
 								<h3>Full winter kit</h3>
 								<div>Half Jacket + Skiny Trousers + Boot leather</div>
 							</div>
-							<div class="flex-row flex-middle">
+							<div class="buy-area-to-cart flex-row flex-middle">
 								<img src="../img/add-to-cart.png" alt="add-to-cart">
 								<div class="sale-price">120$</div>
 							</div>
@@ -155,20 +212,25 @@
 				<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
 				<div class="container">
 					<div class="best-products flex-row flex-around flex-wrap">
-						<div class="best-product flex-row flex-between flex-middle">
+						<div class="best-product flex-row flex-around flex-middle">
 							<div class="img-container">
 								<img src="img/product4.png" alt="product">
 							</div>
 							<div class="best-product-divider"></div>
-							<div class="best-product-text flex-col">
-								<h3>Reebok Track Jacket</h3>
-								<div class="flex-row flex-between">
+							<div class="flex-col">
+								<h3>Full winter kit</h3>
+								<div class="best-product-info flex-row flex-between">
+
 									<div class="raiting flex-row flex-middle">
 										<img src="../img/orange-star.jpg" class="star" alt="orange-star">
 										<img src="../img/orange-star.jpg" class="star" alt="orange-star"><img src="../img/orange-star.jpg" class="star"><img src="../img/orange-star.jpg" class="star" alt="orange-star">
 										<img src="../img/grey-star.jpg" class="star" alt="grey-star"></div>
 
 									<div class="best-product-price">100$</div>
+								</div>
+								<div class="best-product-to-cart flex-row flex-between flex-middle">
+									<img src="../img/add-to-cart.png" calt="add to cart">
+									<div class="best-product-add">Add to cart</div>
 								</div>
 							</div>
 						</div>
@@ -179,7 +241,7 @@
 							<div class="best-product-divider"></div>
 							<div class="flex-col">
 								<h3>Full winter kit</h3>
-								<div class="flex-row flex-between">
+								<div class="best-product-info flex-row flex-between">
 
 									<div class="raiting flex-row flex-middle">
 										<img src="../img/orange-star.jpg" class="star" alt="orange-star">
@@ -187,6 +249,10 @@
 										<img src="../img/grey-star.jpg" class="star" alt="grey-star"></div>
 
 									<div class="best-product-price">100$</div>
+								</div>
+								<div class="best-product-to-cart flex-row flex-between flex-middle">
+									<img src="../img/add-to-cart.png" calt="add to cart">
+									<div class="best-product-add">Add to cart</div>
 								</div>
 							</div>
 						</div>
@@ -197,7 +263,7 @@
 							<div class="best-product-divider"></div>
 							<div class="flex-col">
 								<h3>Full winter kit</h3>
-								<div class="flex-row flex-between">
+								<div class="best-product-info flex-row flex-between">
 
 									<div class="raiting flex-row flex-middle">
 										<img src="../img/orange-star.jpg" class="star" alt="orange-star">
@@ -206,22 +272,27 @@
 
 									<div class="best-product-price">100$</div>
 								</div>
-							</div>
-						</div>
-						<div class="news flex-row flex-middle flex-around">
-							<div class="news-text flex-row flex-middle">
-								<h4>News letter</h4>
-								<div class="news-text-join">Join us now to get all news and special offers</div>
-							</div>
-							<div class="flex-row">
-								<div class="email flex-row flex-middle">
-									<img src="../img/email.png" alt="email">
-									<div class="email-text">Type your email here</div>
+								<div class="best-product-to-cart flex-row flex-between flex-middle">
+									<img src="../img/add-to-cart.png" calt="add to cart">
+									<div class="best-product-add">Add to cart</div>
 								</div>
-								<button>Join us</button>
 							</div>
-
 						</div>
+
+					</div>
+					<div class="news flex-row flex-middle flex-around flex-wrap">
+						<div class="news-text flex-row flex-middle">
+							<h4>News letter</h4>
+							<div class="news-text-join">Join us now to get all news and special offers</div>
+						</div>
+						<div class="flex-row">
+							<div class="email flex-row flex-middle">
+								<img src="../img/email.png" alt="email">
+								<div class="email-text">Type your email here</div>
+							</div>
+							<button>Join us</button>
+						</div>
+
 					</div>
 				</div>
 			</section>
@@ -229,6 +300,38 @@
 
 	</header>
 	<footer>
+		<div class="container flex-row flex-between flex-middle flex-wrap">
+			<div class="footer-logo flex-col flex-top">
+				<img src="img/logo.png" alt="shopy">
+				<div class="copy">shopy c 2015. your copy right here</div>
+			</div>
+			<div class="footer-menu flex-row flex-wrap">
+				<ul>
+					<li><a href="">About us</a></li>
+					<li><a href="">Contact us</a></li>
+					<li><a href="">Support</a></li>
+				</ul>
+				<ul>
+					<li><a href="">Our feed</a></li>
+					<li><a href="">Terms and conditions</a></li>
+					<li><a href="">Our privacy</a></li>
+				</ul>
+				<ul>
+					<li><a href="">Join us</a></li>
+					<li><a href="">Live support</a></li>
+				</ul>
+			</div>
+			<div class="payment flex-col">
+				<div class="payment-text">Payment Methods</div>
+				<div class="cards flex-row">
+					<img src="img/card1.png" alt="card">
+					<img src="img/card2.png" alt="card">
+					<img src="img/card3.png" alt="card">
+					<img src="img/card4.png" alt="card">
+					<img src="img/card5.png" alt="card">
+				</div>
+			</div>
+		</div>
 	</footer>
 
 	<link rel="stylesheet" href="css/main.min.css">
