@@ -12,7 +12,7 @@
 
 <body>
 
-	<header>
+	<header id="home">
 		<div class="header-info flex-col flex-center">
 			<div class="container flex-row flex-between">
 				<div class="contacts flex-row">
@@ -36,12 +36,13 @@
 		<nav class="flex-col flex-center">
 			<div class="container flex-row flex-middle">
 				<img src="img/logo.png" class="logo" alt="shopy">
-				<ul class="flex-row">
-					<li>Home</li>
-					<li>Products</li>
-					<li>Hot Deals</li>
-					<li>About</li>
-					<li>Contact</li>
+				<img src="img/menu-icon.png" class="menu" alt="menu">
+				<ul class="flex-row flex-wrap">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#products">Products</a></li>
+					<li><a href="#best">Hot Deals</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 				<div class="actions flex-row flex-stretch">
 					<div class="action flex-row">
@@ -83,7 +84,7 @@
 			</div>
 		</div>
 		<div class="main-wrapper">
-			<section class="s-new flex-col">
+			<section class="s-new flex-col" id="products">
 				<h2><span>New</span> arrivals</h2>
 				<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
 				<div class="products container flex-row flex-wrap flex-around">
@@ -207,7 +208,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="s-best">
+			<section class="s-best" id="best">
 				<h2><span>Best</span> sales</h2>
 				<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
 				<div class="container">
@@ -299,13 +300,13 @@
 		</div>
 
 	</header>
-	<footer>
+	<footer id="contact">
 		<div class="container flex-row flex-between flex-middle flex-wrap">
 			<div class="footer-logo flex-col flex-top">
 				<img src="img/logo.png" alt="shopy">
 				<div class="copy">shopy c 2015. your copy right here</div>
 			</div>
-			<div class="footer-menu flex-row flex-wrap">
+			<div class="footer-menu flex-row">
 				<ul>
 					<li><a href="">About us</a></li>
 					<li><a href="">Contact us</a></li>
@@ -333,8 +334,8 @@
 			</div>
 		</div>
 	</footer>
-
 	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
 </body>
 
 </html>

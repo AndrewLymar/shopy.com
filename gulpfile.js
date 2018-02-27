@@ -16,9 +16,8 @@ var gulp           = require('gulp'),
 
 gulp.task('js', function() {
 	return gulp.src([
-		'!app/js/*.min.js',
 		'app/libs/*.js',
-		'app/js/*.js',
+		'app/js/common.js'
 		])
 	.pipe(concat('scripts.min.js'))
 	.pipe(uglify())
