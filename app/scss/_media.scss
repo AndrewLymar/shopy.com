@@ -100,6 +100,20 @@
 			justify-content: space-around;
 		}
 	}
+	.banner {
+		margin-top: 115px;
+	}
+	.banner-info {
+		text-align: center;
+		h1 {
+			font-size: 48px;
+			line-height: 1em;
+			margin-bottom: 25px;
+		}
+	}
+	.buy-info {
+		justify-content: space-around;
+	}
 	.best-products {
 		padding-left: 25px;
 		padding-right: 25px;
@@ -140,19 +154,8 @@
 	.actions {
 		margin-left: 0;
 	}
-	.banner-info {
-		h1 {
-			font-size: 48px;
-			line-height: 1em;
-			margin-bottom: 25px;
-			text-align: center;
-		}
-	}
 	.contacts {
 		flex-direction: column;
-	}
-	.buy-info {
-		justify-content: space-around;
 	}
 	.news {
 		width: 100%;
